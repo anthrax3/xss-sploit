@@ -37,7 +37,7 @@ module Prints
             puts "[!] ".colorize( :light_blue ).colorize( :background => :red ).blink + "#{str}".colorize( :light_blue ).colorize( :background => :red )
         end
 
-    end # Symbols
+    end # Decoration
 
 end # Print
 end # Console

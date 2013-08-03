@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="539846b5-c6ed-4764-8b88-c773941042a1" name="Default" comment="" />
+    <list default="true" id="539846b5-c6ed-4764-8b88-c773941042a1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/xss/ui/console/prints/print_decoration.rb" afterPath="$PROJECT_DIR$/lib/xss/ui/console/prints/print_decoration.rb" />
+    </list>
     <ignored path="xss-console.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1375557646862" ignored="false" />
@@ -52,10 +54,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="xss-console.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="xss-console.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xss-console.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.30425057">
+            <state line="16" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/xss/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="print_decoration.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/prints/print_decoration.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="20" selection-start="935" selection-end="935" vertical-scroll-proportion="0.74161077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="print_color.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/prints/print_color.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,6 +125,7 @@
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/encoder.rb" />
         <option value="$PROJECT_DIR$/xss-console.rb" />
+        <option value="$PROJECT_DIR$/lib/xss/ui/console/prints/print_decoration.rb" />
       </list>
     </option>
   </component>
@@ -338,6 +368,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xss-console" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xss-console" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -553,20 +605,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="26" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/prints/print_decoration.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="22" selection-start="617" selection-end="627" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands/show.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="49" selection-start="97" selection-end="130" vertical-scroll-proportion="0.0">
@@ -635,13 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/prints/print_decoration.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="22" selection-start="617" selection-end="627" vertical-scroll-proportion="0.5704698">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands/wiki.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="41" selection-start="429" selection-end="429" vertical-scroll-proportion="0.2852349">
@@ -658,7 +689,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xss-console.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.30425057">
+        <state line="16" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xss/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/prints/print_color.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/prints/print_decoration.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="20" selection-start="935" selection-end="935" vertical-scroll-proportion="0.74161077">
           <folding />
         </state>
       </provider>
