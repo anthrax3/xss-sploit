@@ -39,9 +39,8 @@ module Prints
 
         end
 
+    end # Options
 
-
-    end
 end # Print
 end # Console
 end # Ui

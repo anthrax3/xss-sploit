@@ -24,10 +24,10 @@ module Commands
             }
 
         end
-    end
+    end # Encoder
 
-end
-end
-end
-end
-end
+end # Commands
+end # Shell
+end # Console
+end # Ui
+end # Xss

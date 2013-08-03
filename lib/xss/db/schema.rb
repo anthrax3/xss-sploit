@@ -12,9 +12,9 @@ rescue LoadError
 end
 
 module Xss
-    module Database
+module Database
         class Db
 
         end
-    end
+end
 end
