@@ -12,7 +12,7 @@ module Commands
         end
 
         #
-        # The inner commands in show
+        # A hash of inner commands in payload
         #
         def commands
             {
