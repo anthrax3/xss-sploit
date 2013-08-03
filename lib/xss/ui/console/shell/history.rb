@@ -1,3 +1,6 @@
+#
+# This module for managing console history
+#
 
 module Xss
 module Ui
