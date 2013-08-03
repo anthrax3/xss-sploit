@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="539846b5-c6ed-4764-8b88-c773941042a1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/encoder.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/exploit.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/payload.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/show.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/wiki.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/xss/ui/console/shell/history.rb" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/history.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xss-console.rb" afterPath="$PROJECT_DIR$/xss-console.rb" />
-    </list>
+    <list default="true" id="539846b5-c6ed-4764-8b88-c773941042a1" name="Default" comment="" />
     <ignored path="xss-console.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1375557646862" ignored="false" />
