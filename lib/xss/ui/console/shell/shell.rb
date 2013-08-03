@@ -7,12 +7,11 @@ module Console
     module Shell
         attr_accessor :input, :output
         class Prompt
-            def initialize(tab_completion=nil)
-                rl_check
-                rl_tabcomp_engine(tab_completion)
-                history = History.new
-                @file = File.open(history.history_file, "a")
-            end
+            #def initialize(tab_completion=nil)
+            #    rl_tabcomp_engine(tab_completion)
+            #    history = History.new
+            #    @file = File.open(history.history_file, "a")
+            #end
 
             #
             # Method which once called, will begin a readline prompt
@@ -26,19 +25,6 @@ module Console
                     end
                 end
                 return line
-            end
-
-            #
-            # Readline require check
-            #
-            def rl_check
-                if (!Object.const_defined?('Readline'))
-                    begin
-                        require 'readline'
-                    rescue ::LoadError
-                        require 'rbreadline_compat'
-                    end
-                end
             end
 
             #
@@ -61,7 +47,7 @@ module Console
                     puts_debug "Use 'exit' command to quite!"
                 end
             end
-        end
+        end # Prompt
     end # Shell
 
 end # Console

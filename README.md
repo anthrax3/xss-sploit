@@ -11,5 +11,5 @@ Xss Sploit act as pentester assisstance to exploit XSS vulnerability. Xss sploit
 * Xss Sploit has encdoer to encode your fule exploit to many type of encoders
 
 
-**All contributions are welcome**
+**This is a start up project ALL kinds of contributions are welcome**
 
