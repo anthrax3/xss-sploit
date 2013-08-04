@@ -73,17 +73,23 @@ module Console
     #end # Shell
 
     class Prompt
+
         def initialize
             require 'readline'
+
             @stty_save = `stty -g`.chomp!
             trap('INT', 'SIG_IGN')
+        end
+
+        def history
+
         end
 
         def start
             begin
                 ::Readline.completion_append_character = " "
                 while true
-                    line = Readline.readline('-> ', true)
+                    line = Readline.readline("-> ".dark_red , true)
 
                     # Exit control
                     if line =~ /^quit|^exit/

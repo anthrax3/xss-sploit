@@ -12,11 +12,11 @@ XSSDIR = File.join(File.expand_path(File.dirname(xss_base)))
 $:.unshift(File.join(File.expand_path(File.dirname(xss_base)), 'lib'))
 
 
-
 require 'xss'
 
 prompt = Xss::Ui::Console::Shell::Prompt.new
 
 prompt.start
+
 
 
