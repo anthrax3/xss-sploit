@@ -76,13 +76,10 @@ module Console
 
         def initialize
             require 'readline'
-
+            history = Xss::Ui::Console::Shell::History.new
+            @file   = File.open(history.history_file, 'a')
             @stty_save = `stty -g`.chomp!
             trap('INT', 'SIG_IGN')
-        end
-
-        def history
-
         end
 
         def start
@@ -90,6 +87,7 @@ module Console
                 ::Readline.completion_append_character = " "
                 while true
                     line = Readline.readline("-> ".dark_red , true)
+                    @file.puts(line)
 
                     # Exit control
                     if line =~ /^quit|^exit/

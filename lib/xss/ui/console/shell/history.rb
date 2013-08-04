@@ -15,9 +15,12 @@ module Shell
             history_file_init
         end
 
+        #
+        # Create/Initiate .history file if not exist
+        #
         def history_file_init
 
-            self.history_file = "#{Xss::Xss_HOME_DIR}/history"
+            self.history_file = "#{XSSDIR}/.history"
 
             if ! ::File.exists?("#{self.history_file}")
                 File.new("#{self.history_file}", "w+")
