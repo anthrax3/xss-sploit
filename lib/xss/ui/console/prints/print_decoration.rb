@@ -19,21 +19,21 @@ module Prints
 
         # Info print
         def puts_info(str = "")
-            puts "[+]".green + "#{str}"
+            puts "\n[+]".green + "#{str}"
         end
 
         # Error print
         def puts_err(str = "")
-           puts "[-] ".red + "#{str}"
+           puts "\n[-] ".red + "#{str}"
         end
 
         # Debug print
         def puts_debug(str = "")
-            puts "[!] ".yellow + "#{str}"
+            puts "\n[!] ".light_yellow + "#{str}"
         end
 
         # Warning print
-        def puts_warn(str = "")
+        def puts_fatal(str = "")
             puts "[!] ".colorize( :light_blue ).colorize( :background => :red ).blink + "#{str}".colorize( :light_blue ).colorize( :background => :red )
         end
 

@@ -1,5 +1,6 @@
 #
-# This module for managing console history
+# This module for managing console history;
+# This class from WXF framework
 #
 
 module Xss
