@@ -1,3 +1,8 @@
+#
+# Core class for console's shell prompt
+#
+
+
 module Xss
 module Ui
 module Console
@@ -10,6 +15,7 @@ module Console
             def initialize
                 require 'readline'
                 @shell_config = Xss::Ui::Console::Shell::Config.new
+                @shell_config.tab_completion
             end
 
             #
@@ -18,8 +24,7 @@ module Console
             def start
                 begin
                     while true
-                        line = Readline.readline("-> ".red , true)
-                        #@file.puts(line)
+                        line = Readline.readline("XSSploit".light_white + " -> ".red , true)
                         @shell_config.history(line)
                         @shell_config.sure_exit?(line)
 

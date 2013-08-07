@@ -1,4 +1,9 @@
 # encoding: UTF-8
+
+# exploits should be categorized in database as well as payloads
+# exploits: HTML tags , html forms
+# payloads: popup(alerts,prompts,etc) , redirect , src http://payload,
+#
 begin
     require 'rubygems'
     require 'sqlite3'

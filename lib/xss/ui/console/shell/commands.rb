@@ -21,15 +21,15 @@ module Shell
 
             case _show
                 when cmd == _show.commands["all"]
-                    puts "Allllll"
+                    puts "Call Allllll"
                 when cmd == _show.commands["exploits"]
-                    puts "exploitss"
+                    puts "Call exploitss"
                 when cmd == _show.commands["payloads"]
-                    puts "exploitss"
+                    puts "Call exploitss"
                 when cmd == _show.commands["encoders"]
-                    puts "encodersss"
+                    puts "Call encodersss"
                 when cmd == _show.commands
-                    puts "wiki"
+                    puts "Call wiki"
                 else
                     puts_debug "Unkown option"
 

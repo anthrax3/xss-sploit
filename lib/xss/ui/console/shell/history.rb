@@ -30,6 +30,9 @@ module Shell
             hist_file
         end
 
+        #
+        # To read history from history file
+        #
         def hist_file
             hfile =  File.open("#{self.history_file}", "r")
             hfile.each do |line|
@@ -37,6 +40,19 @@ module Shell
                 ::Readline::HISTORY.push(line)
             end
             hfile.close
+        end
+
+        #
+        # Check if inserted line is repeated or not
+        #
+        def line_repeated?(line)
+            if line =~ /^\s*$/ or Readline::HISTORY.to_a[-2] == line
+                Readline::HISTORY.pop
+                return true
+            else
+                return false
+            end
+
         end
 
 
