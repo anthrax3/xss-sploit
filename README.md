@@ -8,7 +8,7 @@ Xss Sploit act as pentester assisstance to exploit XSS vulnerability. Xss sploit
 * Chose your exploit ex.( ```<script></script>``` )
 * Chose your payload ex.( ```alert("XSS Sploit!")``` )
 * Then ask it to put all together ( ```<script>alert("XSS Sploit!")</script>``` )  - now , take this to your target
-* Xss Sploit has encdoer to encode your fule exploit to many type of encoders
+* Xss Sploit has encdoer to encode your full exploit to many type of encoders
 
 
 **This is a start up project ALL kinds of contributions are welcome**
