@@ -1,6 +1,7 @@
 #
-# This class a central class for general console configurations
+# This class a central place for general console configurations
 #
+require 'xss/ui/console/shell/commands'
 
 module Xss
 module Ui
@@ -8,6 +9,9 @@ module Console
 module Shell
 
     class Config
+        include Xss::Ui::Console::Shell::Commands
+
+        attr_accessor :input, :prm
 
         def initialize
             @_history = Xss::Ui::Console::Shell::History.new
@@ -21,22 +25,41 @@ module Shell
         end
 
         #
-        # To change title to promper title after use an exploit or encoder
+        #
+        #
+        def grab
+            line = nil
+            begin
+                line = ::Readline.readline(prm, true)
+            end
+        end
+
+
+        #
+        # To change title to prompt title after use an exploit or encoder
         # TODO: MAKE SURE EXPLOIT IS EXIST AND ONLY EXPLOITS AND ENCODERS CAN CHANGE THE TITLE
-        def title(name)
-            if name.nil?
-                return ""
-            else
-                Readline.readline("#{name} -> ".red , true)
+        def mod_prm(prm=nil)
+            dup_prm = "#{self.input.prm.dup}"
+
+            if (prm)
+                new_prm = "#{self.prm} #{prm}#{pchar} "
+                test    =  dup_prm.gsub!("#{self.input.prm}", "#{new_prm}")
+                self.input.prm = "#{test}"
             end
 
+            input.input_line = "#{test}" if input.respond_to?('input_line')
+            self.input = input || Reader.new(lambda {|cmd| tabbed_comp(cmd)})
         end
 
         #
         # To check if the entered line is command or not
         #
         def is_command?(cmd)
-
+            if self.respond_to?("cmd_#{cmd}")
+                return true
+            else
+                return false
+            end
         end
 
         #

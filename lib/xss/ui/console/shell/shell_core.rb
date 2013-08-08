@@ -2,7 +2,6 @@
 # Core class for console's shell prompt
 #
 
-
 module Xss
 module Ui
 module Console
@@ -22,11 +21,13 @@ module Console
             # Start prompt
             #
             def start
+
                 begin
                     while true
                         line = Readline.readline("XSSploit".light_white + " -> ".red , true)
                         @shell_config.history(line)
                         @shell_config.sure_exit?(line)
+                        puts @shell_config.is_command?(line)
 
                     end
                 rescue Interrupt
@@ -36,7 +37,8 @@ module Console
                 end
 
             end
-        end
+
+        end # Prompt
 
     end # Shell
 end # Console

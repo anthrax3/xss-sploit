@@ -16,7 +16,7 @@ module Shell
         def help
         end
 
-        def show(cmd)
+        def cmd_show(cmd)
             _show = Xss::Ui::Console::Shell::Commands::Show.new
 
             case _show
@@ -37,16 +37,16 @@ module Shell
 
         end
 
-        def exploit
+        def cmd_exploit
         end
 
-        def payload
+        def cmd_payload
         end
 
-        def encoder
+        def cmd_encoder
         end
 
-        def wiki
+        def cmd_wiki
         end
 
     end
