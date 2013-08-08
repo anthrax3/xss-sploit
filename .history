@@ -515,3 +515,7 @@ ls
 show
 exploit
 exit
+ls
+puts 
+show
+exit

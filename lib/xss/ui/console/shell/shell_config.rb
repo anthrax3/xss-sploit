@@ -52,7 +52,7 @@ module Shell
         end
 
         #
-        # To check if the entered line is command or not
+        # To check if the entered line is command or not from Commands class
         #
         def is_command?(cmd)
             if self.respond_to?("cmd_#{cmd}")
