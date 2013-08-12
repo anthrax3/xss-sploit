@@ -1,3 +1,6 @@
+#
+# Options class
+#
 
 
 module Xss

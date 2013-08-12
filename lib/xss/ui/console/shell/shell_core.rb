@@ -1,5 +1,5 @@
 #
-# Core class for console's shell prompt
+# Prompt class is a core for console's shell prompt
 #
 
 module Xss

@@ -1,3 +1,7 @@
+#
+# Update standard String class to add colors
+#
+
 #module Xss
 #module Ui
 #module Console

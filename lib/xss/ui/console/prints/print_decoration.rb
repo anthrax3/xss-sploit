@@ -1,4 +1,6 @@
-
+#
+# Decoration module Decorate application outputs
+#
 
 module Xss
 module Ui

@@ -1,5 +1,5 @@
 #
-# Dealing with commands
+# Commands module Dealing with commands
 #
 require 'xss/ui/console/shell/commands/help'
 require 'xss/ui/console/shell/commands/show'
