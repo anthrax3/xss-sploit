@@ -49,7 +49,6 @@ module Shell
         #    end
         #
         #    input.input_line = "#{test}" if input.respond_to?('input_line')
-        #    self.input = input || Reader.new(lambda {|cmd| tabbed_comp(cmd)})
         #end
 
         #
