@@ -27,7 +27,8 @@ module Console
                         line = Readline.readline("XSSploit".light_white + " -> ".red , true)
                         @shell_config.history(line)
                         @shell_config.sure_exit?(line)
-                        puts @shell_config.is_command?(line)
+                        #puts @shell_config.is_command?(line)
+                        @shell_config.run_command(line)
 
                     end
                 rescue Interrupt

@@ -9,7 +9,6 @@ module Console
 module Shell
 
     class Config
-        include Xss::Ui::Console::Shell::Commands
 
         attr_accessor :input, :prm
 
@@ -17,6 +16,8 @@ module Shell
             @_history = Xss::Ui::Console::Shell::History.new
             @file     = File.open(@_history.history_file, 'a')
             #self.input = input || Reader.new(lambda {|cmd| tabbed_comp(cmd)})
+            @operator = Operator.new
+            @operator.add_actiivity_stack_item(Commands)
         end
 
         def history(line)
@@ -54,12 +55,13 @@ module Shell
         #
         # To check if the entered line is command or not from Commands class
         #
-        def is_command?(cmd)
-            if self.respond_to?("cmd_#{cmd}")
-                return true
-            else
-                return false
-            end
+        def run_command(cmd)
+          command = cmd.split
+          current_activity.send("cmd_#{command.first}", *command) if current_activity.respond_to?("cmd_#{command.first}")
+        end
+        
+        def current_activity
+          @operator.activity_stack.last
         end
 
         #

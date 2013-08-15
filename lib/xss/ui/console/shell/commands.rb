@@ -1,19 +1,25 @@
 #
 # Commands module Dealing with commands
 #
-require 'xss/ui/console/shell/commands/help'
-require 'xss/ui/console/shell/commands/show'
-require 'xss/ui/console/shell/commands/exploit'
-require 'xss/ui/console/shell/commands/payload'
-require 'xss/ui/console/shell/commands/encoder'
+#require 'xss/ui/console/shell/commands/help'
+#require 'xss/ui/console/shell/commands/show'
+#require 'xss/ui/console/shell/commands/exploit'
+#require 'xss/ui/console/shell/commands/payload'
+#require 'xss/ui/console/shell/commands/encoder'
+
 
 module Xss
 module Ui
 module Console
 module Shell
-    module Commands
+    class Commands
+      
+        def initialize(operator)
+          @operator = operator
+        end
 
-        def help
+        def cmd_help(*commands)
+          puts "help!"
         end
 
         def cmd_show(cmd)
@@ -50,9 +56,11 @@ module Shell
         end
 
     end
+
 end
 end
 end
 end
+
 
 
