@@ -13,3 +13,5 @@ Xss Sploit act as pentester assisstance to exploit XSS vulnerability. Xss sploit
 
 **This is a start up project ALL kinds of contributions are welcome**
 
+
+Special Thanks to [Ken Johnson](https://github.com/cktricky)([@cktricky](https://twitter.com/cktricky)) for his awesome support!
