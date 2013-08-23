@@ -1,0 +1,1 @@
+require 'xss/db/schema'

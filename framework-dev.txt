@@ -1,0 +1,25 @@
+
+Class  = [C]
+Method = [M]
+Module = [O]
+
+
+xss--> Console--> Prints--> print_color: [C]String
+    |	      |  	|-> print_decoration: [O]Decoration 
+    |	      |  	|-> print_options: [C] Options
+    |	      |
+    |	      |--> Shell--> Commands--> [C] exploit
+    |	               |            |-> [C] encoder
+    |	               |            |-> [C] payloads
+    |	               |            |-> [C] Show
+    |	               |            |-> [C] wiki
+    |	               |            |-> [C] help
+    |	               |
+    |	               |-> [C] shell_core: [M](start)
+    |	               |-> [C] shell_config: [M](history, grab, is_command?, interrupt, sure_exit?)
+    |	               |-> [C] history: [M](history_file_init, hist_file, line_repeated?)
+    |	               |-> 
+    |
+    |
+    |--> database--> [C]Schema
+     
