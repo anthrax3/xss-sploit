@@ -11,15 +11,16 @@ module Shell
 
   class Config
     include Xss::Ui::Console::Prints::Decoration
+    include Xss::Ui::Console::Shell::Commands
 
     attr_accessor :input, :prm
 
     def initialize
       @_history = Xss::Ui::Console::Shell::History.new
       @file     = File.open(@_history.history_file, 'a')
-      @commands = Xss::Ui::Console::Shell::Commands::CommandsCore
+      @commands = CommandsCore
       @operator = Operator.new
-      @operator.add_activity_stack_item(Xss::Ui::Console::Shell::Commands::CommandsCore)   # load all commands exist in CommandsCore class to activity_stack (we'll need it in respond_to later)
+      @operator.add_activity_stack_item(CommandsCore)   # load all commands exist in CommandsCore class to activity_stack (we'll need it in respond_to later)
     end
 
     def history(line)
@@ -67,7 +68,7 @@ module Shell
           ::Readline.basic_word_break_characters = "\x00"
           #p comp = proc { |s| @commands.sub_commands(line).grep(/^#{Regexp.escape(s)}/) }
           # TODO : to make command array depends on the command
-          ary = Xss::Ui::Console::Shell::Commands::CommandsCore.instance_methods(false).map {|s| s.to_s.split("_").last}
+          ary = CommandsCore.instance_methods(false).map {|s| s.to_s.split("_").last}
           comp = proc { |s| ary.grep(/^#{Regexp.escape(s)}/) }
           #comp = proc { |s| Xss::Ui::Console::Shell::Commands::CommandsCore.instance_methods(false).grep(/^#{Regexp.escape(s)}/) }
           ::Readline.completion_proc = comp
