@@ -7,42 +7,42 @@ module Xss
 module Ui
 module Console
 module Prints
-    class Options
+  class Options
 
-        def initialize(output, framework)
-            @output    = output
-            @framework = framework
-        end
+    def initialize(output, framework)
+      @output    = output
+      @framework = framework
+    end
 
+    #
+    # Shows available exploits in the database
+    #
+    def show_exploits
         #
-        # Shows available exploits in the database
-        #
-        def show_exploits
-            #
-        end
+    end
 #
+    #
+    # Shows available payloads in the database
+    #
+    def show_payloads
         #
-        # Shows available payloads in the database
-        #
-        def show_payloads
-            #
-        end
+    end
 
+    #
+    # Shows available encoders
+    #
+    def show_encoders
         #
-        # Shows available encoders
-        #
-        def show_encoders
-            #
-        end
+    end
 
-        #
-        # Shows available encoders
-        #
-        def show_wiki
+    #
+    # Shows available encoders
+    #
+    def show_wiki
 
-        end
+    end
 
-    end # Options
+  end # Options
 
 end # Print
 end # Console

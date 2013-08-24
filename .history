@@ -40,3 +40,4 @@ eit
 exit
 use modules/exploits/alerts.rb 
 help
+exit
