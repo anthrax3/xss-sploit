@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="539846b5-c6ed-4764-8b88-c773941042a1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.history" afterPath="$PROJECT_DIR$/.history" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/xss/ui/console/shell/shell_config.rb" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/shell_config.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="xss-console.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +36,7 @@
     <file path="/xss-console.rb" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1375643223424" ignored="false" />
     <file path="/help.rb" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1377274771079" ignored="false" />
     <file path="/print_color.rb" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1376292301022" ignored="false" />
-    <file path="/shell_config.rb" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1377338479758" ignored="false" />
+    <file path="/shell_config.rb" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1377339135341" ignored="false" />
     <file path="/shell_core.rb" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1377294753122" ignored="false" />
     <file path="/print_decoration.rb" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1376292351723" ignored="false" />
     <file path="/temp.rb" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1375832805134" ignored="false" />
@@ -92,7 +93,7 @@
       <file leaf-file-name="shell_config.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/shell_config.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="63" selection-start="2194" selection-end="2194" vertical-scroll-proportion="0.50056624">
+            <state line="69" column="103" selection-start="2298" selection-end="2298" vertical-scroll-proportion="0.46206117">
               <folding />
             </state>
           </provider>
@@ -764,7 +765,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/shell_config.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="63" selection-start="2194" selection-end="2194" vertical-scroll-proportion="0.50056624">
+        <state line="69" column="103" selection-start="2298" selection-end="2298" vertical-scroll-proportion="0.46206117">
           <folding />
         </state>
       </provider>
