@@ -12,6 +12,7 @@ module Xss
 module Ui
 module Console
 module Shell
+module Commands
     class CommandsCore
 
         attr_accessor :sub_commands
@@ -84,7 +85,7 @@ module Shell
         end
 
     end
-
+end # Commands
 end
 end
 end

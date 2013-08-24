@@ -22,11 +22,11 @@ module Commands
       #
       def commands
         {
-                '?' => 'Help menu - Show This screen',
-                'show' => 'Displays modules of a given type, or all modules',
-                'use' => 'Selects a module by name',
-                'help' => 'Help menu - Show This screen',
-                'exit' => 'Exit the console'
+          '?'    => 'Help menu - Show This screen',
+          'show' => 'Displays modules of a given type, or all modules',
+          'use'  => 'Selects a module by name',
+          'help' => 'Help menu - Show This screen',
+          'exit' => 'Exit the console'
         }
       end
 

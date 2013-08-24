@@ -17,9 +17,9 @@ module Shell
     def initialize
       @_history = Xss::Ui::Console::Shell::History.new
       @file     = File.open(@_history.history_file, 'a')
-      @commands = CommandsCore
+      @commands = Xss::Ui::Console::Shell::Commands::CommandsCore
       @operator = Operator.new
-      @operator.add_activity_stack_item(CommandsCore)   # load all commands exist in CommandsCore class to activity_stack (we'll need it in respond_to later)
+      @operator.add_activity_stack_item(Xss::Ui::Console::Shell::Commands::CommandsCore)   # load all commands exist in CommandsCore class to activity_stack (we'll need it in respond_to later)
     end
 
     def history(line)
@@ -65,7 +65,8 @@ module Shell
       #if (!tab_completion.nil?)
           ::Readline.completion_append_character = ' '
           ::Readline.basic_word_break_characters = "\x00"
-          comp = proc { |s| @commands.sub_commands(line).grep(/^#{Regexp.escape(s)}/) }
+          #p comp = proc { |s| @commands.sub_commands(line).grep(/^#{Regexp.escape(s)}/) }
+          p comp = proc { |s| CommandsCore.instance_methods(false).grep(/^#{Regexp.escape(s)}/) }
           ::Readline.completion_proc = comp
       #end
     end
