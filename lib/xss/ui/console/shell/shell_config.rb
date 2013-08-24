@@ -66,6 +66,7 @@ module Shell
           ::Readline.completion_append_character = ' '
           ::Readline.basic_word_break_characters = "\x00"
           #p comp = proc { |s| @commands.sub_commands(line).grep(/^#{Regexp.escape(s)}/) }
+          # TODO : to make command array depends on the command
           p comp = proc { |s| CommandsCore.instance_methods(false).grep(/^#{Regexp.escape(s)}/) }
           ::Readline.completion_proc = comp
       #end

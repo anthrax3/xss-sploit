@@ -19,8 +19,10 @@ module Commands
 
         def initialize(operator)
             @operator = operator
-            @help = Xss::Ui::Console::Shell::Commands::Help.new
-            @show = Xss::Ui::Console::Shell::Commands::Show.new
+            #@help = Xss::Ui::Console::Shell::Commands::Help.new
+            @help = Help.new
+            #@show = Xss::Ui::Console::Shell::Commands::Show.new
+            @show = Show.new
         end
 
         def self.sub_commands(cmd)
