@@ -7,7 +7,7 @@ module Ui
 module Console
 module Shell
   class Reader
-    attr_accessor :prm, :input
+    attr_accessor :prm
 
     def main_commands_array
 
