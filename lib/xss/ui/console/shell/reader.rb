@@ -7,7 +7,7 @@ module Ui
 module Console
 module Shell
   class Reader
-    attr_accessor :prm
+    attr_accessor :prm, :input
 
     def main_commands_array
 
@@ -23,6 +23,7 @@ module Shell
     #    ::Readline.completion_proc = tab_completion
     #  end
     #end
+    
     def tab_comp(line)
       if !tab_completion.nil?
           ::Readline.completion_append_character = ' '

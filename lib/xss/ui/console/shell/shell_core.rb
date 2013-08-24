@@ -23,9 +23,10 @@ module Console
 
         begin
           while true
+              line = ""
+              @shell_config.tab_completion(line)
               line = Readline.readline('XSSploit'.light_white + ' -> '.red , true)
               @shell_config.history(line)
-              @shell_config.tab_completion(line)
               @shell_config.run_command(line)
           end
         rescue Interrupt
