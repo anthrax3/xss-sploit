@@ -23,6 +23,7 @@ module Shell
     #    ::Readline.completion_proc = tab_completion
     #  end
     #end
+    
     def tab_comp(line)
       if !tab_completion.nil?
           ::Readline.completion_append_character = ' '
