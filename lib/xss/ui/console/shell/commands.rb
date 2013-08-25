@@ -25,14 +25,14 @@ module Commands
             @show = Show.new
         end
 
-        def self.sub_commands(cmd)
+        def self.sub_commands(cmd = nil)
             subCommandsOf =
             {
                     'help' => @help.cmd_ary,
                     'show' => @show.cmd_ary
             }
 
-            return subCommandsOf[cmd]
+            return subCommandsOf[cmd] if not nil?
         end
 
         #                           #

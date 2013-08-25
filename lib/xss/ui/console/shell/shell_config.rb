@@ -66,11 +66,12 @@ module Shell
       #if (!tab_completion.nil?)
           ::Readline.completion_append_character = ' '
           ::Readline.basic_word_break_characters = "\x00"
-          #p comp = proc { |s| @commands.sub_commands(line).grep(/^#{Regexp.escape(s)}/) }
           # TODO : to make command array depends on the command
           ary = CommandsCore.instance_methods(false).map {|s| s.to_s.split("_").last}
           comp = proc { |s| ary.grep(/^#{Regexp.escape(s)}/) }
-          #comp = proc { |s| Xss::Ui::Console::Shell::Commands::CommandsCore.instance_methods(false).grep(/^#{Regexp.escape(s)}/) }
+          #p ary = @commands.sub_commands(line)
+          #comp = proc { |s| ary.grep(/^#{Regexp.escape(s)}/) }
+
           ::Readline.completion_proc = comp
       #end
     end

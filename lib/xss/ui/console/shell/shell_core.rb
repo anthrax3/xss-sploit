@@ -23,10 +23,11 @@ module Console
 
         begin
           while true
-              line = Readline.readline('XSSploit'.light_white + ' -> '.red , true)
-              @shell_config.history(line)
-              @shell_config.tab_completion(line)
-              @shell_config.run_command(line)
+            line = ""
+            @shell_config.tab_completion(line)
+            line = Readline.readline('XSSploit'.light_white + ' -> '.red , true)
+            @shell_config.history(line)
+            @shell_config.run_command(line)
           end
         rescue Interrupt
           puts_debug "Use 'exit' command to quite!"
