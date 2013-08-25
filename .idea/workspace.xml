@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="539846b5-c6ed-4764-8b88-c773941042a1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/xss/ui/console/shell/shell_core.rb" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/shell_core.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/xss/ui/console/shell/shell_config.rb" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/shell_config.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="xss-console.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,7 +92,7 @@
       <file leaf-file-name="shell_config.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/shell_config.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="45" selection-start="2274" selection-end="2274" vertical-scroll-proportion="0.6015625">
+            <state line="69" column="86" selection-start="2166" selection-end="2166" vertical-scroll-proportion="0.4877232">
               <folding />
             </state>
           </provider>
@@ -109,7 +110,7 @@
       <file leaf-file-name="reader.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/reader.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="9" selection-start="524" selection-end="788" vertical-scroll-proportion="0.0">
+            <state line="9" column="23" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,7 +165,6 @@
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/use.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/payload.rb" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/reader.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/show.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/history.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/encoder.rb" />
@@ -174,8 +174,9 @@
         <option value="$PROJECT_DIR$/lib/xss/ui/console/prints/print_options.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/help.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb" />
-        <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/shell_config.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/shell_core.rb" />
+        <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/reader.rb" />
+        <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/shell_config.rb" />
       </list>
     </option>
   </component>
@@ -792,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/reader.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="9" selection-start="524" selection-end="788" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="22" selection-start="361" selection-end="373" vertical-scroll-proportion="0.0">
@@ -813,9 +807,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/reader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="23" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/shell_config.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="45" selection-start="2274" selection-end="2274" vertical-scroll-proportion="0.6015625">
+        <state line="69" column="86" selection-start="2166" selection-end="2166" vertical-scroll-proportion="0.4877232">
           <folding />
         </state>
       </provider>
