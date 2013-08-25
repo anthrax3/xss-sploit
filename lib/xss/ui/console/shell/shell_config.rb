@@ -63,33 +63,16 @@ module Shell
     # Tab completion settings
     #
     def tab_completion(line)
-      #if (!tab_completion.nil?)
-          ::Readline.completion_append_character = ' '
-          ::Readline.basic_word_break_characters = "\x00"
-          # TODO : to make command array depends on the command
-          #ary = CommandsCore.instance_methods(false).map {|s| s.to_s.split("_").last}
-          ary = CommandsCore.instance_methods(false).map do |s|
-                  next unless s.to_s.include? "cmd_"
-                  s.to_s.split("_").last
-                end
-          comp = proc { |s| ary.grep(/^#{Regexp.escape(s)}/) }
-          #p ary = @commands.sub_commands(line)
-          #comp = proc { |s| ary.grep(/^#{Regexp.escape(s)}/) }
-
-          ::Readline.completion_proc = comp
-      #end
+      ::Readline.completion_append_character = ' '
+      ::Readline.basic_word_break_characters = "\x00"
+      #ary = CommandsCore.instance_methods(false).map {|s| s.to_s.split("_").last}
+      ary = CommandsCore.instance_methods(false).map do |s|
+              next unless s.to_s.include? "cmd_"
+              s.to_s.split("_").last
+            end
+      comp = proc { |s| ary.grep(/^#{Regexp.escape(s)}/) }
+      ::Readline.completion_proc = comp
     end
-
-    #def tab_comp(line)
-    #    line = current_activity.cmd_ary
-    #    if (!tab_completion.nil?)
-    #        ::Readline.completion_append_character = " "
-    #        ::Readline.basic_word_break_characters = "\x00"
-    #        comp = proc { |s| line.cmd_arry.grep(/^#{Regexp.escape(s)}/) }
-    #        ::Readline.completion_proc = comp
-    #    end
-    #end
-
 
   end # Prompt
 
