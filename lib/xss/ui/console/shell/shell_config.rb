@@ -38,6 +38,8 @@ module Shell
       #current_activity.send("cmd_#{command.first}", *command) if current_activity.respond_to?("cmd_#{command.first}")
       if current_activity.respond_to?("cmd_#{command.first}")
         current_activity.send("cmd_#{command.first}", *command)
+      elsif cmd.strip.empty?
+        # Do nothing!
       else
         puts_err "#{cmd}: Command not found!"
       end
