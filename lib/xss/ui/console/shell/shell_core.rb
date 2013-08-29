@@ -30,7 +30,7 @@ module Console
             @shell_config.run_command(line)
           end
         rescue Interrupt
-          puts_debug "Use 'exit' command to quite!"
+          puts_debug "Use 'exit' command to quit!"
           @shell_config.interrupt_control
           retry
         end

@@ -8,7 +8,6 @@ module Console
 module Prints
 
   module Decoration
-    attr_reader :terminal_size
 
     # Terminal dimensions
     def terminal_size
