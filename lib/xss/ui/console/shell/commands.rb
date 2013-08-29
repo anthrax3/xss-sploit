@@ -3,10 +3,12 @@
 #
 require 'xss/ui/console/shell/commands/help'
 require 'xss/ui/console/shell/commands/show'
+require 'xss/ui/console/shell/commands/use'
 require 'xss/ui/console/shell/commands/update'
-#require 'xss/ui/console/shell/commands/exploit'
-#require 'xss/ui/console/shell/commands/payload'
-#require 'xss/ui/console/shell/commands/encoder'
+require 'xss/ui/console/shell/commands/exploit'
+require 'xss/ui/console/shell/commands/payload'
+require 'xss/ui/console/shell/commands/encoder'
+require 'xss/ui/console/shell/commands/wiki'
 
 
 module Xss
@@ -72,8 +74,8 @@ module Commands
 
       COMMANSDLIST.each do |cmd|
         define_method("cmd_#{cmd}") do |*arg|
-          obj = instance_variable_get("@#{cmd}")
-          obj = Xss::Ui::Console::Shell::Commands.const_get("#{cmd}".capitalize!).new.action 
+          obj = instance_variable_get("@#{cmd}") #@cmd
+          obj = Xss::Ui::Console::Shell::Commands.const_get("#{cmd}".capitalize!).new.action #@cmd.action
         end
       end
       alias cmd_? :cmd_help

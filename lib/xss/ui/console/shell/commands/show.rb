@@ -5,7 +5,6 @@ module Shell
 module Commands
 
     class Show
-        #include Xss::Ui::Console::Shell::Commands
 
         attr_accessor :cmd_ary
 
