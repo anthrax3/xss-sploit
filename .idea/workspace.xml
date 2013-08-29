@@ -4,6 +4,7 @@
     <list default="true" id="539846b5-c6ed-4764-8b88-c773941042a1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.history" afterPath="$PROJECT_DIR$/.history" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="xss-console.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,7 +26,7 @@
     <file path="$PROJECT_DIR$/../conosle/console.rb" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1375482369539" ignored="false" />
     <file path="/console.rb" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1376292995663" ignored="false" />
     <file path="/history.rb" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1375834345090" ignored="false" />
-    <file path="/commands.rb" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1377803288008" ignored="false" />
+    <file path="/commands.rb" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1377803514750" ignored="false" />
     <file path="/exploit.rb" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1375559466546" ignored="false" />
     <file path="/show.rb" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1376729682382" ignored="false" />
     <file path="/encoder.rb" changelist="539846b5-c6ed-4764-8b88-c773941042a1" time="1375559473075" ignored="false" />
@@ -103,7 +104,7 @@
       <file leaf-file-name="commands.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="119" selection-start="2334" selection-end="2334" vertical-scroll-proportion="0.62357414">
+            <state line="79" column="54" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.62357414">
               <folding />
             </state>
           </provider>
@@ -841,7 +842,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="119" selection-start="2334" selection-end="2334" vertical-scroll-proportion="0.62357414">
+        <state line="79" column="54" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.62357414">
           <folding />
         </state>
       </provider>

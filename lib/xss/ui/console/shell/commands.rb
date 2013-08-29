@@ -77,9 +77,7 @@ module Commands
           #var.action
           #instance_variable_get("@#{cmd}").send(Object.const_get("#{cmd}".capitalize!).new.action)
           #instance_variable_get("@#{cmd}").send(Object.const_get("Xss::Ui::Console::Shell::Commands::" + "#{cmd}".capitalize!).new.action)
-          instance_variable_get("@#{cmd}").send(Xss::Ui::Console::Shell::Commands.const_get("#{cmd}".capitalize!).new)#.action)
-          instance_variable_get("@#{cmd}").action
-
+          instance_variable_get("@#{cmd}").send(Xss::Ui::Console::Shell::Commands.const_get("#{cmd}".capitalize!).new.action)
         end
       end
       alias cmd_? :cmd_help
