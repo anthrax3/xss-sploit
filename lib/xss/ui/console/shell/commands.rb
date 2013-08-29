@@ -73,7 +73,7 @@ module Commands
       COMMANSDLIST.each do |cmd|
         define_method("cmd_#{cmd}") do |*arg|
           obj = instance_variable_get("@#{cmd}")
-          obj = Xss::Ui::Console::Shell::Commands.const_get("#{cmd}".capitalize!).new.action
+          obj = Xss::Ui::Console::Shell::Commands.const_get("#{cmd}".capitalize!).new.action 
         end
       end
       alias cmd_? :cmd_help

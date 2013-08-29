@@ -53,6 +53,7 @@ help
 help
 help 
 help
+<<<<<<< HEAD
 show 
 help 
 help
@@ -67,4 +68,10 @@ help
 exit
 help
 help 
+=======
+exit
+help
+exit
+help
+>>>>>>> f884fb1dac39edef2c7059e4b4e7757c4ee88d6d
 exit

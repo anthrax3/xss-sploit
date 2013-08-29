@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="539846b5-c6ed-4764-8b88-c773941042a1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.history" afterPath="$PROJECT_DIR$/.history" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -104,7 +105,7 @@
       <file leaf-file-name="commands.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="19" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.48098433">
+            <state line="74" column="0" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.27181208">
               <folding />
             </state>
           </provider>
@@ -833,7 +834,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="19" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.48098433">
+        <state line="74" column="0" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.27181208">
           <folding />
         </state>
       </provider>
