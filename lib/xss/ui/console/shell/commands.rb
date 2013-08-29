@@ -40,7 +40,7 @@ module Commands
       # Core framework's Commands #
       #                           #
 
-      # Help menu
+      #Help menu
       #def cmd_help(*cmds)
       #  @help.action
       #end
@@ -72,12 +72,8 @@ module Commands
 
       COMMANSDLIST.each do |cmd|
         define_method("cmd_#{cmd}") do |*arg|
-          # 1st try metaprogramming
-          #var = instance_variable_get("@#{cmd}")
-          #var.action
-          #instance_variable_get("@#{cmd}").send(Object.const_get("#{cmd}".capitalize!).new.action)
-          #instance_variable_get("@#{cmd}").send(Object.const_get("Xss::Ui::Console::Shell::Commands::" + "#{cmd}".capitalize!).new.action)
-          instance_variable_get("@#{cmd}").send(Xss::Ui::Console::Shell::Commands.const_get("#{cmd}".capitalize!).new.action)
+          obj = instance_variable_get("@#{cmd}")
+          obj = Xss::Ui::Console::Shell::Commands.const_get("#{cmd}".capitalize!).new.action
         end
       end
       alias cmd_? :cmd_help
@@ -104,7 +100,7 @@ module Commands
       #def cmd_wiki
       #end
 
-  end
+  end # CommandsCore
 end # Commands
 end
 end
