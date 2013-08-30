@@ -15,6 +15,7 @@ module Commands
     def name
       'Set'
     end
+
     # {command => Description}
     def self.info
       {'set' => 'Sets a variable to a value'}

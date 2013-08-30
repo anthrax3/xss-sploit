@@ -17,6 +17,7 @@ module Commands
     def name
       'Exploit'
     end
+
     # {command => Description}
     def self.info
       {'encoder' => 'Encoders for exploits to bypass filters'}

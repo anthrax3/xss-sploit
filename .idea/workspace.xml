@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="539846b5-c6ed-4764-8b88-c773941042a1" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/exit.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.history" afterPath="$PROJECT_DIR$/.history" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.history" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/encoder.rb" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/encoder.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/exploit.rb" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/exploit.rb" />
@@ -105,19 +105,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commands.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="commands.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="109" selection-start="880" selection-end="880" vertical-scroll-proportion="0.60850114">
+            <state line="32" column="109" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="help.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="help.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands/help.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.0">
+            <state line="27" column="0" selection-start="581" selection-end="662" vertical-scroll-proportion="0.35346755">
               <folding />
             </state>
           </provider>
@@ -127,15 +127,6 @@
         <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/reader.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="history.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/history.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="21" selection-start="64" selection-end="67" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -153,7 +144,7 @@
       <file leaf-file-name="set.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands/set.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="806" vertical-scroll-proportion="0.0">
+            <state line="17" column="4" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -162,7 +153,7 @@
       <file leaf-file-name="exploit.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands/exploit.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="19" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
+            <state line="18" column="8" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -171,7 +162,7 @@
       <file leaf-file-name="encoder.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands/encoder.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="26" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
+            <state line="19" column="4" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -200,17 +191,17 @@
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/shell_core.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/show.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/payload.rb" />
-        <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/exploit.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/update.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/shell_config.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/exit.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/use.rb" />
-        <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/set.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/wiki.rb" />
-        <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/encoder.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/help.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/doksh.rb" />
         <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb" />
+        <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/set.rb" />
+        <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/exploit.rb" />
+        <option value="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/encoder.rb" />
       </list>
     </option>
   </component>
@@ -714,35 +705,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands/exploit.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="19" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands/encoder.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="26" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands/help.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands/set.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="806" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/shell_core.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="43" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/history.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="21" selection-start="64" selection-end="67" vertical-scroll-proportion="0.03803132">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/reader.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -756,30 +740,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/shell_core.rb">
+    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands/set.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="43" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+        <state line="17" column="4" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/reader.rb">
+    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands/exploit.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="18" column="8" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/history.rb">
+    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands/encoder.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="64" selection-end="67" vertical-scroll-proportion="0.0">
+        <state line="19" column="4" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="109" selection-start="880" selection-end="880" vertical-scroll-proportion="0.60850114">
+        <state line="32" column="109" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands/help.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="581" selection-end="662" vertical-scroll-proportion="0.35346755">
           <folding />
         </state>
       </provider>
