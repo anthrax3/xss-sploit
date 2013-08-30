@@ -67,10 +67,9 @@ module Shell
     def tab_completion(line)
       ::Readline.completion_append_character = ' '
       ::Readline.basic_word_break_characters = "\x00"
-      #ary = CommandsCore.instance_methods(false).map {|s| s.to_s.split("_").last}
-      ary = CommandsCore.instance_methods(false).map do |s|
-              next unless s.to_s.include? "cmd_"
-              s.to_s.split("_").last
+      ary = CommandsCore.instance_methods(false).map do |c|
+              next unless c.to_s.include? "cmd_"
+              c.to_s.split("_").last
             end
       comp = proc { |s| ary.grep(/^#{Regexp.escape(s)}/) }
       ::Readline.completion_proc = comp

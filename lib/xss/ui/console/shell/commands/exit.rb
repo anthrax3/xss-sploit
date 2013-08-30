@@ -4,7 +4,8 @@ module Console
 module Shell
 module Commands
 
-  class Set
+  class Exit
+    #include Xss::Ui::Console::Shell::Commands
 
     attr_accessor :cmd_ary
 
@@ -13,36 +14,30 @@ module Commands
     end
 
     def name
-      'Set'
+      'Exit'
     end
     # {command => Description}
     def self.info
-      {'set' => 'Sets a variable to a value'}
+      {'Exit' => 'Exit the console'}
     end
 
 
     #
-    # A hash of inner commands in show
-    # The hash keys: all, exploits, @param[payloads], encoders, wiki
+    # A hash of inner commands in update
     #
     def commands
-
-      {
-          'payload'  => 'Show all available exploits.',
-          'encoders' => 'Show all available encoders.',
-          'wiki'     => 'Show the wiki.'
-      }
-
+      {}
     end
 
     #
     # Just what the command use to do
     #
     def action
-      puts "use command!\n\n"
+      puts "See you soon ;)\n\n"
+      exit
     end
 
-  end # Set
+  end # Exit
 
 end # Commands
 end # Shell

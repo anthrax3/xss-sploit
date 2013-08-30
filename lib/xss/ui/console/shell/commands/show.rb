@@ -15,6 +15,10 @@ module Commands
         def name
           'Show'
         end
+        # {command => Description}
+        def self.info
+          {'show' => 'Displays modules of a given type, or all modules'}
+        end
 
         #
         # A hash of inner commands in show

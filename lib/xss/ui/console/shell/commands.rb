@@ -2,7 +2,7 @@
 # CommandsCore module calling all commands
 #
 
-%w{exploit payload encoder update help show use wiki set}.each do |lib|
+%w{exploit payload encoder update help show use wiki set exit}.each do |lib|
   require "xss/ui/console/shell/commands/#{lib}"
 end
 
@@ -12,7 +12,7 @@ module Console
 module Shell
 module Commands
     class CommandsCore
-      COMMANSDLIST = Dir.glob("lib/xss/ui/console/shell/commands/*").map {|cmd| cmd.split("/").last.gsub(".rb" , "")}
+      COMMANDSLIST = Dir.glob("lib/xss/ui/console/shell/commands/*").map {|cmd| cmd.split("/").last.gsub(".rb" , "")}
       attr_accessor :sub_commands
 
       def initialize(operator)
@@ -31,36 +31,28 @@ module Commands
               'update'  => @update.cmd_ary
           }
 
-          return subCommandsOf[cmd] if not nil?
+          return subCommandsOf[cmd] unless nil?
       end
 
-      #                           #
-      # Core framework's Commands #
-      #                           #
+      #                      #
+      # framework's Commands #
+      #                      #
 
-      # Exit command & its control
-      def cmd_exit(*cmd)
-        # TODO just commented temp
-        #print "\nAre you sure?[n]: "
-        #if Readline.readline =~ /^y$|^yes$/i
-            puts "See you soon ;)\n\n"
-            exit
-        #end
-      end
-      alias :cmd_quit :cmd_exit
-
-
-      #                               #
-      # External framework's Commands #
-      #                               #
-
-      COMMANSDLIST.each do |cmd|
+      #
+      # Automatically, Instantiates all commands' methods with its action. ex.
+      #def cmd_commandName(cmd*)
+      #  @commandName = CommandNameClass.new
+      #  @commandName.action
+      #end
+      #
+      COMMANDSLIST.each do |cmd|
         define_method("cmd_#{cmd}") do |*arg|
           obj = instance_variable_get("@#{cmd}") #@cmd
           obj = Xss::Ui::Console::Shell::Commands.const_get("#{cmd}".capitalize!).new.action #@cmd.action
         end
       end
-      alias cmd_? :cmd_help
+      #alias cmd_? :cmd_help
+      #alias :cmd_quit :cmd_exit  #TODO I have an issue to call aliases from help :(
 
   end # CommandsCore
 end # Commands

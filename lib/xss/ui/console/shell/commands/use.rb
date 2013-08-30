@@ -15,6 +15,15 @@ module Commands
     def name
         'Use'
     end
+    # {command => Description}
+    def self.info
+      {'use' => 'Selects a module by name'}
+    end
+
+    def self.usage
+      puts "Usage: use module_name\n\n"
+      puts "The use command is used to interact with a module of a given name.\n\n"
+    end
 
     #
     # A hash of inner commands in show

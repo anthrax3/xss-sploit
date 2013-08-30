@@ -1,3 +1,5 @@
+#require 'lib/xss/ui/console/shell/commands'
+
 module Xss
 module Ui
 module Console
@@ -9,24 +11,34 @@ module Commands
       attr_accessor :cmd_ary
 
       def initialize
+        #@commands = CommandsCore::COMMANDSLIST
+        @commands = CommandsCore.instance_methods(false).map do |c|
+          next unless c.to_s.include? "cmd_"
+          c.to_s.split("_").last
+        end.delete_if {|e| e.nil?}.sort!
+
         self.cmd_ary = commands.keys.sort
       end
 
-      def name
-        'Help'
+      # {command => Description}
+      def self.info
+        {'help' => 'Help menu - Show This screen'}
+      end
+
+      def self.usage
+        puts "WTF! Are you asking help for help?!"
       end
 
       #
       # A hash of inner commands in help
       #
       def commands
-        {
-          '?'    => 'Help menu - Show This screen',
-          'show' => 'Displays modules of a given type, or all modules',
-          'use'  => 'Selects a module by name',
-          'help' => 'Help menu - Show This screen',
-          'exit' => 'Exit the console'
-        }
+        help_list = {}
+        @commands.map do |cmd|
+          info = Commands.const_get("#{cmd}".capitalize!).info   #=> {"cmd"=>"Description"}
+          help_list[info.keys.first] = info.values.first
+        end
+        return help_list
       end
 
       #
@@ -35,9 +47,9 @@ module Commands
       def action
         puts "\nHelp menu"
         puts '=' * 'Help menu'.length + "\n\n"
-        puts "Command \t\t Description"
-        puts '-' * 'Command'.length + " \t\t " + '-' * 'Description'.length
-        cmd_ary.each {|key| puts "#{key} \t\t #{commands[key]}"}
+        puts "   Command \t Description"
+        puts "   " + '-' * 'Command'.length + " \t " + '-' * 'Description'.length
+        commands.map {|cmd , desc| puts "   #{cmd}    \t #{desc}"}
         puts "\n\n"
       end
 

@@ -16,6 +16,11 @@ module Commands
     def name
       'Update'
     end
+    # {command => Description}
+    def self.info
+      {'update' => 'Update framework'}
+    end
+
 
     #
     # A hash of inner commands in update

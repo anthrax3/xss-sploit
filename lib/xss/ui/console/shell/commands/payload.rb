@@ -15,6 +15,11 @@ module Commands
       def name
           'Payload'
       end
+      # {command => Description}
+      def self.info
+        {'payload' => 'Help menu - Show This screen'}
+      end
+
 
       #
       # A hash of inner commands in payload
