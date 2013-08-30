@@ -1,15 +1,10 @@
 #
 # CommandsCore module calling all commands
 #
-require 'xss/ui/console/shell/commands/help'
-require 'xss/ui/console/shell/commands/show'
-require 'xss/ui/console/shell/commands/use'
-require 'xss/ui/console/shell/commands/update'
-require 'xss/ui/console/shell/commands/exploit'
-require 'xss/ui/console/shell/commands/payload'
-require 'xss/ui/console/shell/commands/encoder'
-require 'xss/ui/console/shell/commands/wiki'
 
+%w{exploit payload encoder update help show use wiki set}.each do |lib|
+  require "xss/ui/console/shell/commands/#{lib}"
+end
 
 module Xss
 module Ui
@@ -27,8 +22,13 @@ module Commands
       def self.sub_commands(cmd = nil)
           subCommandsOf =
           {
-                  'help' => @help.cmd_ary,
-                  'show' => @show.cmd_ary
+              'help'    => @help.cmd_ary,
+              'show'    => @show.cmd_ary,
+              'use'     => @use.cmd_ary,
+              'exploit' => @exploit.cmd_ary,
+              'payload' => @payload.cmd_ary,
+              'wiki'    => @wiki.cmd_ary,
+              'update'  => @update.cmd_ary
           }
 
           return subCommandsOf[cmd] if not nil?
@@ -39,7 +39,7 @@ module Commands
       #                           #
 
       # Exit command & its control
-      def cmd_exit(*cmds)
+      def cmd_exit(*cmd)
         # TODO just commented temp
         #print "\nAre you sure?[n]: "
         #if Readline.readline =~ /^y$|^yes$/i
