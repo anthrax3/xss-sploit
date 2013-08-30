@@ -42,12 +42,6 @@ module Commands
       # Core framework's Commands #
       #                           #
 
-      #Help menu
-      #def cmd_help(*cmds)
-      #  @help.action
-      #end
-      #alias cmd_? :cmd_help
-
       # Exit command & its control
       def cmd_exit(*cmds)
         # TODO just commented temp
@@ -59,14 +53,6 @@ module Commands
       end
       alias :cmd_quit :cmd_exit
 
-      #def cmd_back(*cmds)
-      #  puts 'Back one step and clear activity stack'
-      #end
-      #
-      ## Update framework
-      #def cmd_update(*cmds)
-      #  @update.action
-      #end
 
       #                               #
       # External framework's Commands #
@@ -79,28 +65,6 @@ module Commands
         end
       end
       alias cmd_? :cmd_help
-
-      #def cmd_show(*cmds)
-      #    @show.action
-      #end
-      #
-      #def use
-      #    puts 'use command executed!!'
-      #end
-      #
-      #def cmd_exploit(*cmds)
-      #    puts 'exploit command executed!!'
-      #end
-      #
-      #def cmd_payload(*cmds)
-      #    puts 'payload command executed!!'
-      #end
-      #
-      #def cmd_encoder
-      #end
-      #
-      #def cmd_wiki
-      #end
 
   end # CommandsCore
 end # Commands
