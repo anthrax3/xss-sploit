@@ -22,10 +22,6 @@ module Commands
 
       def initialize(operator)
         @operator = operator
-        #@help   = Help.new
-        #@show   = Show.new
-        #@update = Update.new
-
       end
 
       def self.sub_commands(cmd = nil)
@@ -68,10 +64,10 @@ module Commands
 
   end # CommandsCore
 end # Commands
-end
-end
-end
-end
+end # Shell
+end # Console
+end # Ui
+end # Xss
 
 
 
