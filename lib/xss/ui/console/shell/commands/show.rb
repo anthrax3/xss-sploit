@@ -39,9 +39,9 @@ module Commands
           }
         end
 
-        #
-        # Just what the command use to do
-        #
+      #
+      # Just what the command use to do
+      #
       def action
         puts "To be fixed\n\n"
         _show = case

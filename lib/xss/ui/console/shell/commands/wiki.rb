@@ -32,6 +32,13 @@ module Commands
       }
     end
 
+    #
+    # Just what the command use to do
+    #
+    def action
+      puts "wiki command!"
+    end
+
   end
 
 end

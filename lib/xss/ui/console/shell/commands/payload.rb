@@ -39,6 +39,9 @@ module Commands
       }
     end
 
+    #
+    # Just what the command use to do
+    #
     def action
       puts "payload command!"
     end
