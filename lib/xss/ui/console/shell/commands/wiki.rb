@@ -10,9 +10,15 @@ module Commands
     def name
       'Wiki'
     end
+
     # {command => Description}
     def self.info
       {'wiki' => 'List most useful complete exploits'}
+    end
+
+    # Command usage
+    def self.usage
+      puts %q{Usage: wiki}
     end
 
 

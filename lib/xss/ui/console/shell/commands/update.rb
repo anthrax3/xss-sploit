@@ -7,10 +7,10 @@ module Commands
   class Update
     #include Xss::Ui::Console::Shell::Commands
 
-    attr_accessor :cmd_ary
+    attr_accessor :sub_cmd_ary
 
     def initialize
-      self.cmd_ary = commands.keys.sort
+      self.sub_cmd_ary = commands.keys.sort
     end
 
     def name
@@ -21,6 +21,10 @@ module Commands
       {'update' => 'Update framework'}
     end
 
+    # Command usage
+    def self.usage
+      puts %q{Usage: update}
+    end
 
     #
     # A hash of inner commands in update

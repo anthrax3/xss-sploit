@@ -6,10 +6,10 @@ module Commands
 
   class Use
 
-    attr_accessor :cmd_ary
+    attr_accessor :sub_cmd_ary
 
     def initialize
-        self.cmd_ary = commands.keys.sort
+        self.sub_cmd_ary = commands.keys.sort
     end
 
     def name

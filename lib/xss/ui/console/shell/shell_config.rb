@@ -64,7 +64,7 @@ module Shell
     #
     # Tab completion settings
     #
-    def tab_completion(line)
+    def tab_complete(line)
       ::Readline.completion_append_character = ' '
       ::Readline.basic_word_break_characters = "\x00"
       ary = CommandsCore.instance_methods(false).map do |c|

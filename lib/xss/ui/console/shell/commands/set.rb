@@ -6,10 +6,10 @@ module Commands
 
   class Set
 
-    attr_accessor :cmd_ary
+    attr_accessor :sub_cmd_ary
 
     def initialize
-      self.cmd_ary = commands.keys.sort
+      self.sub_cmd_ary = commands.keys.sort
     end
 
     def name
@@ -21,6 +21,10 @@ module Commands
       {'set' => 'Sets a variable to a value'}
     end
 
+    # Command usage
+    def self.usage
+      puts %q{Usage: set option_name}
+    end
 
     #
     # A hash of inner commands in show

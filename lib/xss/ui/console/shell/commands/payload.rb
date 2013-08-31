@@ -6,33 +6,42 @@ module Commands
 
   class Payload
 
-      attr_accessor :cmd_ary
+    attr_accessor :sub_cmd_ary
 
-      def initialize
-          self.cmd_ary = commands.keys.sort
-      end
+    def initialize
+        self.sub_cmd_ary = commands.keys.sort
+    end
 
-      def name
-          'Payload'
-      end
-      # {command => Description}
-      def self.info
-        {'payload' => 'Help menu - Show This screen'}
-      end
+    def name
+        'Payload'
+    end
+    # {command => Description}
+    def self.info
+      {'payload' => 'Help menu - Show This screen'}
+    end
+
+    # Command usage
+    def self.usage
+      puts %q{Usage: payload}
+    end
 
 
-      #
-      # A hash of inner commands in payload
-      #
-      def commands
-        {
-          'all' => 'Show all available exploits, payloads and encoders.',
-          'exploits' => 'Show all available exploits.',
-          'payloads' => 'Show all available payloads.',
-          'encoders' => 'Show all available encoders.',
-          'wiki' => 'Show the wiki.'
-        }
-      end
+    #
+    # A hash of inner commands in payload
+    #
+    def commands
+      {
+        'all' => 'Show all available exploits, payloads and encoders.',
+        'exploits' => 'Show all available exploits.',
+        'payloads' => 'Show all available payloads.',
+        'encoders' => 'Show all available encoders.',
+        'wiki' => 'Show the wiki.'
+      }
+    end
+
+    def action
+      puts "payload command!"
+    end
 
   end # Payload
 

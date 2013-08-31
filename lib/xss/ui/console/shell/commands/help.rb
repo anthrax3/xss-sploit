@@ -8,16 +8,15 @@ module Commands
 
   class Help
 
-      attr_accessor :cmd_ary
+      attr_accessor :sub_cmd_ary
 
       def initialize
-        #@commands = CommandsCore::COMMANDSLIST
         @commands = CommandsCore.instance_methods(false).map do |c|
           next unless c.to_s.include? "cmd_"
           c.to_s.split("_").last
         end.delete_if {|e| e.nil?}.sort!
 
-        self.cmd_ary = commands.keys.sort
+        self.sub_cmd_ary = commands.keys.sort
       end
 
       # {command => Description}
@@ -25,12 +24,13 @@ module Commands
         {'help' => 'Help menu - Show This screen'}
       end
 
+      # Command usage
       def self.usage
-        puts "WTF! Are you asking help for help?!"
+        puts %q{WTF! Are you asking help for help?!}
       end
 
       #
-      # A hash of inner commands in help
+      # Go through each command class and get information, only help will get its commands from info
       #
       def commands
         help_list = {}
@@ -38,6 +38,7 @@ module Commands
           info = Commands.const_get("#{cmd}".capitalize!).info   #=> {"cmd"=>"Description"}
           help_list[info.keys.first] = info.values.first
         end
+
         return help_list
       end
 
