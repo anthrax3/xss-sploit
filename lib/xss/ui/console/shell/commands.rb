@@ -1,10 +1,13 @@
 #
 # CommandsCore module calling all commands
 #
-
-%w{exploit payload encoder update help show use wiki set exit}.each do |lib|
+COMMANDSLIST = Dir.glob("lib/xss/ui/console/shell/commands/*").map {|cmd| cmd.split("/").last.gsub(".rb" , "")}
+COMMANDSLIST.each do |lib|
   require "xss/ui/console/shell/commands/#{lib}"
 end
+#%w{exploit payload encoder update help show use wiki set exit}.each do |lib|
+#  require "xss/ui/console/shell/commands/#{lib}"
+#end
 
 module Xss
 module Ui
@@ -12,7 +15,6 @@ module Console
 module Shell
 module Commands
     class CommandsCore
-      COMMANDSLIST = Dir.glob("lib/xss/ui/console/shell/commands/*").map {|cmd| cmd.split("/").last.gsub(".rb" , "")}
       attr_accessor :sub_commands
 
       def initialize(operator)
