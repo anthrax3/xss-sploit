@@ -5,9 +5,7 @@ COMMANDSLIST = Dir.glob("lib/xss/ui/console/shell/commands/*").map {|cmd| cmd.sp
 COMMANDSLIST.each do |lib|
   require "xss/ui/console/shell/commands/#{lib}"
 end
-#%w{exploit payload encoder update help show use wiki set exit}.each do |lib|
-#  require "xss/ui/console/shell/commands/#{lib}"
-#end
+
 
 module Xss
 module Ui

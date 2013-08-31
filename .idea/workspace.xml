@@ -5,6 +5,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands/doksh.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.history" afterPath="$PROJECT_DIR$/.history" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb" afterPath="$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="xss-console.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,7 +98,7 @@
       <file leaf-file-name="commands.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="461" selection-end="461" vertical-scroll-proportion="0.3232662">
+            <state line="7" column="0" selection-start="239" selection-end="239" vertical-scroll-proportion="0.13310961">
               <folding />
             </state>
           </provider>
@@ -757,7 +758,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/xss/ui/console/shell/commands.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="461" selection-end="461" vertical-scroll-proportion="0.3232662">
+        <state line="7" column="0" selection-start="239" selection-end="239" vertical-scroll-proportion="0.13310961">
           <folding />
         </state>
       </provider>
