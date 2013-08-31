@@ -35,6 +35,10 @@ module Commands
       }
     end
 
+    def action
+      puts "Encoder command!"
+    end
+
   end # Encoder
 
 end # Commands
