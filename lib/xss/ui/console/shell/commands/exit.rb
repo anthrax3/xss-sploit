@@ -16,6 +16,7 @@ module Commands
     def name
       'Exit'
     end
+
     # {command => Description}
     def self.info
       {'Exit' => 'Exit the console'}
