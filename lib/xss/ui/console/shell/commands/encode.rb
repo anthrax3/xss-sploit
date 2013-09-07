@@ -14,11 +14,10 @@ module Commands
       self.cmd_ary = commands.keys.sort
     end
 
-    def name
-      'Encode'
-    end
-
-    # {command => Description}
+    #
+    # Contains command information
+    # @return [Hash] {command => Description}
+    #
     def self.info
       {'encode' => 'Encodes exploits to bypass filters'}
     end

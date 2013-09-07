@@ -12,17 +12,17 @@ module Commands
         self.sub_cmd_ary = commands.keys.sort
     end
 
-    def name
-        'Payload'
-    end
-    # {command => Description}
+    #
+    # Contains command information
+    # @return [Hash] {command => Description}
+    #
     def self.info
       {'payload' => 'Help menu - Show This screen'}
     end
 
     # Command usage
     def self.usage
-      puts %q{Usage: payload}
+      puts %Q{Usage: payload}
     end
 
 

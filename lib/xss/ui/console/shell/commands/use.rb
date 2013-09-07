@@ -12,10 +12,10 @@ module Commands
         self.sub_cmd_ary = commands.keys.sort
     end
 
-    def name
-        'Use'
-    end
-    # {command => Description}
+    #
+    # Contains command information
+    # @return [Hash] {command => Description}
+    #
     def self.info
       {'use' => 'Selects a module by name'}
     end
@@ -32,9 +32,9 @@ module Commands
     def commands
 
       {
-          'exploit'  => 'Show all available exploits.',
-          'encoders' => 'Show all available encoders.',
-          'wiki'     => 'Show the wiki.'
+          'exploit' => 'Show all available exploits.',
+          'encoder' => 'Show all available encoders.',
+          'wiki'    => 'Show the wiki.'
       }
 
     end
@@ -43,8 +43,8 @@ module Commands
     # Just what the command use to do
     #
     def action
-        puts "use command!\n\n"
-        puts "\n\n"
+      puts "use command!\n\n"
+      puts "\n"
     end
 
   end # Use

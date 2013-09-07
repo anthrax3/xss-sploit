@@ -13,11 +13,11 @@ module Console
 module Shell
 module Commands
     class CommandsCore
-      attr_accessor :sub_commands , :sub_cmds_instance
+      attr_accessor  :sub_commands
 
       def initialize(operator)
         @operator = operator
-        self.sub_cmds_instance = {}
+        #@sub_cmds_instance = {}
       end
 
       #                      #
@@ -25,40 +25,28 @@ module Commands
       #                      #
 
       #
-      # Automatically, Instantiates all commands' methods with its action. ex.
-      #def cmd_commandName(cmd*)
-      #  @commandName = CommandNameClass.new.action
-      #  @commandName.action
-      #end
+      # Automatically, Instantiates all commands' methods with its action.
+      #=== Example
+      # def cmd_commandName(cmd*)
+      #   @commandName = CommandNameClass.new.action
+      #   @commandName.action
+      # end
       #
       COMMANDSLIST.each do |cmd|
         define_method("cmd_#{cmd}") do |*arg|
           obj = instance_variable_get("@#{cmd}") #@cmd , we'll need it to call sub-commands
-          sub_cmds_instance[cmd] = obj
-          obj = Xss::Ui::Console::Shell::Commands.const_get("#{cmd}".capitalize!).new.action #@cmd.action
+          command_obj = Xss::Ui::Console::Shell::Commands.const_get("#{cmd}".capitalize!).new#.action #@cmd.action
+          command_obj.action
+          # sub_commands is an [Array] contains all sub commands of the command
+          self.sub_commands = Xss::Ui::Console::Shell::Commands.const_get("#{cmd}".capitalize!).new.sub_cmd_ary
         end
       end
       #alias cmd_? :cmd_help
       #alias :cmd_quit :cmd_exit  #TODO I have an issue to call aliases from help :(
 
 
-      def sub_commands(cmd)
-        p sub_cmds_instance[cmd]
-      end
-
-      #def self.sub_commands(cmd = nil)
-      #    subCommandsOf =
-      #    {
-      #        'help'    => @help.cmd_ary,
-      #        'show'    => @show.cmd_ary,
-      #        'use'     => @use.cmd_ary,
-      #        'exploit' => @exploit.cmd_ary,
-      #        'payload' => @payload.cmd_ary,
-      #        'wiki'    => @wiki.cmd_ary,
-      #        'update'  => @update.cmd_ary
-      #    }
-      #
-      #    return subCommandsOf[cmd] unless nil?
+      #def sub_commands(cmd)
+      #   @sub_cmds_instance
       #end
 
   end # CommandsCore

@@ -12,17 +12,17 @@ module Commands
           self.sub_cmd_ary = commands.keys.sort
         end
 
-        def name
-          'Show'
-        end
-        # {command => Description}
+        #
+        # Contains command information
+        # @return [Hash] {command => Description}
+        #
         def self.info
           {'show' => 'Displays modules of a given type, or all modules'}
         end
 
         # Command usage
         def self.usage
-          puts %q{Usage: show [exploits|payloads]}
+          puts %Q{Usage: show [exploits|payloads]}
         end
 
         #
@@ -31,11 +31,11 @@ module Commands
         #
         def commands
           {
-              'all' => 'Show all available exploits, payloads and encoders.',
+              'all'      => 'Show all available exploits, payloads and encoders.',
               'exploits' => 'Show all available exploits.',
               'payloads' => 'Show all available payloads.',
               'encoders' => 'Show all available encoders.',
-              'wiki' => 'Show the wiki.'
+              'wiki'     => 'Show the wiki.'
           }
         end
 
@@ -46,7 +46,7 @@ module Commands
         puts "To be fixed\n\n"
         _show = case
             when _show == nil
-                puts commands
+                puts "Show commands"
             #when _show.commands["exploits"]
             #    puts "Call exploitss"
             #when _show.commands["payloads"]

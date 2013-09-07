@@ -13,17 +13,17 @@ module Commands
       self.sub_cmd_ary = commands.keys.sort
     end
 
-    def name
-      'Update'
-    end
-    # {command => Description}
+    #
+    # Contains command information
+    # @return [Hash] {command => Description}
+    #
     def self.info
       {'update' => 'Update framework'}
     end
 
     # Command usage
     def self.usage
-      puts %q{Usage: update}
+      puts %Q{Usage: update}
     end
 
     #

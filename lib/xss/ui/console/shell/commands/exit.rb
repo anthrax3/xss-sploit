@@ -13,18 +13,17 @@ module Commands
       self.sub_cmd_ary = commands.keys.sort
     end
 
-    def name
-      'exit'
-    end
-
-    # {command => Description}
+    #
+    # Contains command information
+    # @return [Hash] {command => Description}
+    #
     def self.info
       {'exit' => 'Exit the console'}
     end
 
     # Command usage
     def self.usage
-      puts %q{Just type exit, to exit :)}
+      puts %Q{Just type exit, to exit :)}
     end
 
     #

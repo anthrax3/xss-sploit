@@ -15,27 +15,34 @@ module Commands
           next unless c.to_s.include? "cmd_"
           c.to_s.split("_").last
         end.delete_if {|e| e.nil?}.sort!
-
-        self.sub_cmd_ary = commands.keys.sort
+        # @return [Array] of sub-commands
+       self.sub_cmd_ary = commands.keys.sort
       end
 
-      # {command => Description}
+      #
+      # Contains command information
+      # @return [Hash] {command => Description}
+      #
       def self.info
         {'help' => 'Help menu - Show This screen'}
       end
 
+      #
       # Command usage
+      #
       def self.usage
-        puts %q{WTF! Are you asking help for help?!}
+        puts %Q{WTF! Are you asking help for help?!\nhelp command }
       end
 
       #
-      # Go through each command class and get information, only help will get its commands from info
+      # Goes through each command class and get information,
+      # <b>only <i>help</i> will get its commands from info</b>
+      # @return [Hash]
       #
       def commands
         help_list = {}
         @commands.map do |cmd|
-          info = Commands.const_get("#{cmd}".capitalize!).info   #=> {"cmd"=>"Description"}
+          info = Commands.const_get("#{cmd}".capitalize!).info   #=> {cmd => "Description"}
           help_list[info.keys.first] = info.values.first
         end
 

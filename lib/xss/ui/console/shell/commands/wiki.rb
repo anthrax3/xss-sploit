@@ -7,18 +7,17 @@ module Commands
   class Wiki
     include Xss::Ui::Console::Shell::Commands
 
-    def name
-      'Wiki'
-    end
-
-    # {command => Description}
+    #
+    # Contains command information
+    # @return [Hash] {command => Description}
+    #
     def self.info
       {'wiki' => 'List most useful complete exploits'}
     end
 
     # Command usage
     def self.usage
-      puts %q{Usage: wiki}
+      puts %Q{Usage: wiki}
     end
 
 

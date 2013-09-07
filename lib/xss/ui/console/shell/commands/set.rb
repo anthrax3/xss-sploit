@@ -12,18 +12,17 @@ module Commands
       self.sub_cmd_ary = commands.keys.sort
     end
 
-    def name
-      'Set'
-    end
-
-    # {command => Description}
+    #
+    # Contains command information
+    # @return [Hash] {command => Description}
+    #
     def self.info
       {'set' => 'Sets a variable to a value'}
     end
 
     # Command usage
     def self.usage
-      puts %q{Usage: set option_name}
+      puts %Q{Usage: set option_name}
     end
 
     #
