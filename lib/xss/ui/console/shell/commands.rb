@@ -17,7 +17,6 @@ module Commands
 
       def initialize(operator)
         @operator = operator
-        #@sub_cmds_instance = {}
       end
 
       #                      #
@@ -43,6 +42,10 @@ module Commands
       end
       #alias cmd_? :cmd_help
       #alias :cmd_quit :cmd_exit  #TODO I have an issue to call aliases from help :(
+
+      def cmd_back
+
+      end
 
 
       #def sub_commands(cmd)

@@ -26,10 +26,7 @@ module Console
           while true
             line = ""
             @shell_config.tab_complete#(line)
-            #::Readline.completion_proc = @shell_config.tab_complete(::Readline.line_buffer)
-            #@shell_config.tab_post_comp(line)
-            #p Readline.line_buffer
-            #p Readline.point
+
             line = Readline.readline('XSSploit'.light_white + ' -> '.red , true)
 
             break if line.nil?  # Control Ctrl^D
@@ -38,7 +35,6 @@ module Console
           end
         rescue Interrupt
           puts_debug "Use 'exit' command to quit!"
-          #@shell_config.interrupt_control # I thinks it's not working as it should be :)
           retry
         end
 
